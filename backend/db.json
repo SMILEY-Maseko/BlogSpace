@@ -1,0 +1,19 @@
+[
+  {
+    "id": "1",
+    "title": " Manchester City",
+    "content": "With Pep Guardiola still in change Man City keeps rising an reaching. As it sits 2nd on the premier league table will they stay there or take back their first position, they've had 5 consecutive loses but thet still keeping 2nd position.",
+    "author": "Smiley Maseko",
+    "pictureUrl": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg",
+    "date": "2024-11-26"
+  },
+  {
+    "id": "2",
+    "title": "Manchester United",
+    "content": "With a new sheriff in town Man united still fails to be in the top 10 of the premier league.",
+    "author": "Okuhle Maseko",
+    "pictureUrl":"https://b.fssta.com/uploads/application/soccer/team-logos/manchester-united.png",
+    "date": "2024-11-24"
+  },
+  {}
+]
