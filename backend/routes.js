@@ -25,6 +25,19 @@ router.get('/posts', (req, res) => {
     res.json(posts);
 });
 
+// Get a single blog post by ID
+router.get('/posts/:id', (req, res) => {
+    const posts = readDb();
+    const postId = req.params.id;
+    const post = posts.find(post => post.id === postId);
+
+    if (!post) {
+        return res.status(404).json({ message: 'Post not found' });
+    }
+
+    res.json(post);
+});
+
 // Add a new blog post
 router.post('/posts', (req, res) => {
     const posts = readDb();
