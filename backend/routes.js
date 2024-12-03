@@ -38,6 +38,7 @@ router.get('/posts/:id', (req, res) => {
     res.json(post);
 });
 
+
 // Add a new blog post
 router.post('/posts', (req, res) => {
     const posts = readDb();
