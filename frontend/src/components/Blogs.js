@@ -15,12 +15,14 @@ const Blogs = () => {
   return (
     <div>
       <h1>Blogs</h1>
-      {posts.map((post) => (
-        <div key={post.id}>
-          <h2>{post.title}</h2>
-          <Link to={`/blogs/${post.id}`}>Read More</Link>
-        </div>
-      ))}
+      <div className="blog-container">
+        {posts.map((post) => (
+          <div className="blog-card" key={post.id}>
+            <h2>{post.title}</h2>
+            <Link to={`/blogs/${post.id}`}>Read More</Link>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

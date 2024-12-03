@@ -16,11 +16,13 @@ const PostDetails = () => {
   if (!post) return <h1>Loading...</h1>;
 
   return (
-    <div>
+    <div className="post-details-container">
       <h1>{post.title}</h1>
       <p>{post.content}</p>
-      <img src={post.pictureUrl} alt={post.title}></img>
-      <p>Published on: {post.date}</p>
+      {post.pictureUrl && (
+        <img src={post.pictureUrl} alt={post.title} />
+      )}
+      <p className="date">Published on: {new Date(post.date).toLocaleDateString()}</p>
     </div>
   );
 };
