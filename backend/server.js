@@ -5,7 +5,7 @@ const routes = require('./routes'); // Import routes from routes.js
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'blog-space-rouge.vercel.app',
 }));
 
 app.use(express.json()); // Middleware to parse JSON

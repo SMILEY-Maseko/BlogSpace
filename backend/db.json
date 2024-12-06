@@ -12,8 +12,15 @@
     "title": "Manchester United",
     "content": "With a new sheriff in town Man united still fails to be in the top 10 of the premier league.",
     "author": "Okuhle Maseko",
-    "pictureUrl":"https://b.fssta.com/uploads/application/soccer/team-logos/manchester-united.png",
+    "pictureUrl": "https://b.fssta.com/uploads/application/soccer/team-logos/manchester-united.png",
     "date": "2024-11-24"
+  },
+  {
+    "title": "liverpool",
+    "content": "this team sucks ",
+    "pictureUrl": "https://b.fssta.com/uploads/application/soccer/team-logos/manchester-united.png",
+    "author": "smiley",
+    "date": "2024-12-04",
+    "id": "3"
   }
-  
 ]

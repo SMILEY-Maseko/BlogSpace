@@ -41,10 +41,19 @@ router.get('/posts/:id', (req, res) => {
 
 // Add a new blog post
 router.post('/posts', (req, res) => {
-    const posts = readDb();
+    const posts = readDb(); // Fetch existing posts from the database
     const newPost = req.body;
+
+    // Determine the new ID as a string number
+    const lastId = posts.length > 0 
+        ? Math.max(...posts.map(post => parseInt(post.id, 10))) 
+        : 0;
+    newPost.id = (lastId + 1).toString();
+
+    // Add the new post
     posts.push(newPost);
-    writeDb(posts);
+    writeDb(posts); // Save updated posts to the database
+
     res.status(201).json(newPost);
 });
 
