@@ -12,7 +12,7 @@ const NewPost = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5001/api/posts", { title, content, pictureUrl, author, date })
+      .post("https://blogspace-sk0e.onrender.com/api/posts", { title, content, pictureUrl, author, date })
       .then(() => {
         alert("Post created successfully!");
       })

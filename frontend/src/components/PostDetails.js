@@ -8,7 +8,7 @@ const PostDetails = () => {
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:5001/api/posts/${id}`).then((response) => {
+    axios.get(`https://blogspace-sk0e.onrender.com/api/posts/${id}`).then((response) => {
       setPost(response.data);
     });
   }, [id]);

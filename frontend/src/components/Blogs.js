@@ -7,7 +7,7 @@ const Blogs = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5001/api/posts").then((response) => {
+    axios.get("https://blogspace-sk0e.onrender.com/api/posts").then((response) => {
       setPosts(response.data);
     });
   }, []);
